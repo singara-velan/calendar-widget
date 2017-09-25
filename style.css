@@ -1,0 +1,56 @@
+body {
+    color: green;
+}
+
+.wrapper {
+    position: relative;
+    width: 600px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    height: 350px;
+}
+
+.sec-left{
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background: white;
+}
+
+
+.sec-right{
+    width:780px;
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.slot {
+    height: 60px;
+    width: 130px;
+}
+
+.sec-left .slot {
+    /* background: blue; */
+    margin: 10px;
+    border: 1px solid blue;
+    text-align: right;
+    /* padding: 15px; */
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.sec-right .slot {
+    background: yellow;
+    margin: 10px;
+}
+
+.sec-right .cols {
+    width: 150px;
+    display: inline-block;
+}
+
+.sec-right .cols:nth-child(2n) .slot  {
+    background: green;
+}

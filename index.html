@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-3.2.1.slim.min.js"></script>
+</head>
+
+<body>
+    <h1>Calendar</h1>
+
+    <div class="wrapper">
+        <div class="sec-left">
+            <div class="slot">8 am</div>
+            <div class="slot">9 am</div>
+            <div class="slot">10 am</div>
+            <div class="slot">11 am</div>
+            <div class="slot">12 am</div>
+            <div class="slot">1 pm</div>
+            <div class="slot">2 pm</div>
+            <div class="slot">3 pm</div>
+            <div class="slot">4 pm</div>
+            <div class="slot">5 pm</div>
+        </div>
+        <div class="sec-right">
+            <div class="cols">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="cols">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="cols">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="cols">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+            <div class="cols">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.wrapper').scroll(function () {
+            $('.sec-left').css('left', $('.wrapper').scrollLeft());
+        });
+    </script>
+
+</body>
+
+</html>
