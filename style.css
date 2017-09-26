@@ -30,6 +30,28 @@ body {
     width: 130px;
 }
 
+#header {
+    position: absolute;
+    background: white;
+    z-index: 99999;
+    margin-left: 160px;
+    text-align: center;
+}
+
+#header .slot {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+}
+
+#header, .sec-right {
+    width: 780px;
+}
+
+.sec-left, .sec-right {
+    margin-top:20px;
+}
+
 .sec-left .slot {
     /* background: blue; */
     margin: 10px;

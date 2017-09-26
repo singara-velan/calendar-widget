@@ -11,6 +11,13 @@
     <h1>Calendar</h1>
 
     <div class="wrapper">
+        <div id="header">
+            <div class="slot">staff 1</div>
+            <div class="slot">staff 2</div>
+            <div class="slot">staff 3</div>
+            <div class="slot">staff 4</div>
+            <div class="slot">staff 5</div>
+        </div>
         <div class="sec-left">
             <div class="slot">8 am</div>
             <div class="slot">9 am</div>
@@ -90,6 +97,7 @@
     <script>
         $('.wrapper').scroll(function () {
             $('.sec-left').css('left', $('.wrapper').scrollLeft());
+            $('#header').css('top', $('.wrapper').scrollTop());
         });
     </script>
 
